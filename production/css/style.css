@@ -1,0 +1,49 @@
+header {
+
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 0px;
+    background-color: #232323;
+    padding: 50px 0px 20px;
+    color: white;
+}
+footer .info {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer .copy { 
+    text-align: center; 
+}
+
+.topmenubar {
+    background-color: rgb(46, 46, 46);
+    
+}
+.sidebarbox {
+    background: linear-gradient(to right, rgb(67, 193, 231), rgb(213, 227, 231));
+}
+.sidebarbox {
+    position: relative;
+    width: 240px;
+    height: 100vh;
+}
+.sidebar {
+    width: 240px;
+    height: 100vh;
+}
+.announcement .ann {
+    width: 900px;
+    height: 300px;
+    justify-content: center;
+    padding: 0 50px;
+}
+.announcement .ann .btn {
+    
+}
+
+
