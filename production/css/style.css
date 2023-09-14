@@ -46,22 +46,4 @@ footer .copy {
     
 }
 
-.registrationupdate .inner { 
-    width: 90%;
-    padding: 100px;
-    margin-bottom: 40px;
-}
-/* 제목 영역 */
-.main-title { margin-bottom: 40px; }
-.main-title h1 { font-size: 30px; }
-.main-title p { font-size: 20px; }
-/* 텍스트 입력 */
-.input-text {
-    width: 90%;
-    font-size: 32px;
-    margin: 0 10px;
-    border-radius: 5px;
-    padding-left: 10px;
-    outline: none;
- }
- 
+
