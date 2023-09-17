@@ -1,3 +1,4 @@
+<!-- 인사정보 Personal Record -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +29,7 @@
                     <span class="fs-4">Logo</span>
                 </a>
 
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-                </form>
-        
+                       
                 <div class="text-end">
                 <a href="#" class="btn btn-outline-light me-2">로그인</a>
                 <a href="#" class="btn btn-secondary me-2">회원가입</a>
@@ -112,93 +110,39 @@
     </section>
 
     <section class="content">
-        <!-- 공지사항 -->
-        <section class="announcement">
-            <h2 class="py-3"> ● 공지사항</h2>
-            <div class="ann">
-                <table class="table table-dark table-striped table-hover shadow text-center" id="board-list">
-                    <thead>
-                        <tr class="" id="board-title">
-                            <th>번호</th>
-                            <th>제목</th>
-                            <th>작성자</th>
-                            <th>등록일자</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="empty">
-                            <td colspan="5">1.</td>
-                        </tr>
-                        <tr id="empty">
-                            <td colspan="5">2.</td>
-                        </tr>
-                        <tr id="empty">
-                            <td colspan="5">3.</td>
-                        </tr>
-                        <tr id="empty">
-                            <td colspan="5">4.</td>
-                        </tr>
-                        <tr id="empty">
-                            <td colspan="5">조회된 데이터가 없습니다.</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="pr_top">
+            <h2>인사 카드 정보</h2>
+            <hr width="800px">
+        </div>
+    <div class="pr_body">  
+        
+
+        <div class="pr_card">
+            <div class="pr_card-content">
+                <br>
+                <h2>Information</h2><br>
+                <p>이름: <span id="name">더미 예제</span></p>
+                <p>사번: <span id="employee-id">12345</span></p>
+                <p>부서: <span id="department">자 제</span></p>
+                <p>직급: <span id="position">사 원</span></p>
+                <p>전화번호: <span id="phone-number">(123) 456-7890</span></p>
+                <p>주소: <span id="address">123 우리집, 앞마당</span></p>
             </div>
-        </section>
-        <hr>
-        <!-- section -->
-        <h2 class="py-1"> ● 금일/명일작업</h2>
-        <section id="recent" class="container">
-            <div class="card-list">
-                <!-- 금일작업 -->
-                <div class="card">
-                    <div class="img-box">
-                        <a href="#">
-                            <img src="img/img.jpg" alt="1">
-                        </a>
-                    </div>
 
-                    <div class="content-box">
-                        <h3 class="title">금일작업</h3>
-                        <p class="info">
-                            금일 작업사항 내용
-                        </p>
-                        <div class="etc-box">
-                            <div class="item">
-                                <span class="date">2023-06-06</span>
-                            </div>
-                            <button class="btn btn-dark rounded-pill px-3" type="button">확인하기</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 명일작업 -->
-                <div class="card">
-                    <div class="img-box">
-                        <a href="#">
-                            <img src="img/img.jpg" alt="1">
-                        </a>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="title">명일작업</h3>
-                        <p class="info">
-                            명일 작업사항 내용
-                        </p>
-                        <div class="etc-box">
-                            <div class="item">
-                                <span class="date">2023-06-06</span>
-                            </div>
-                            <button class="btn btn-dark rounded-pill px-3" type="button">확인하기</button>
-                        </div>
-                    </div>
-                </div>
-                
+            <div class="pr_card-buttons">
+                <button id="edit-button">수정</button>
+                <button id="delete-button">삭제</button>
+                <button id="cancel-button">돌아가기</button>
             </div>
-        </section>
+        </div>
 
+        <div class="pr_edit-form">     
+        </div>
 
-        </section>
+        <script src="script.js"></script>
+
+    </div> 
+    </section>
 
 
     </main>

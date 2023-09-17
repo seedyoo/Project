@@ -1,3 +1,4 @@
+<!-- 근태 관리 Attendence management -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +29,7 @@
                     <span class="fs-4">Logo</span>
                 </a>
 
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-                </form>
-        
+                       
                 <div class="text-end">
                 <a href="#" class="btn btn-outline-light me-2">로그인</a>
                 <a href="#" class="btn btn-secondary me-2">회원가입</a>
@@ -112,93 +110,44 @@
     </section>
 
     <section class="content">
-        <!-- 공지사항 -->
-        <section class="announcement">
-            <h2 class="py-3"> ● 공지사항</h2>
-            <div class="ann">
-                <table class="table table-dark table-striped table-hover shadow text-center" id="board-list">
-                    <thead>
-                        <tr class="" id="board-title">
-                            <th>번호</th>
-                            <th>제목</th>
-                            <th>작성자</th>
-                            <th>등록일자</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="empty">
-                            <td colspan="5">1.</td>
-                        </tr>
-                        <tr id="empty">
-                            <td colspan="5">2.</td>
-                        </tr>
-                        <tr id="empty">
-                            <td colspan="5">3.</td>
-                        </tr>
-                        <tr id="empty">
-                            <td colspan="5">4.</td>
-                        </tr>
-                        <tr id="empty">
-                            <td colspan="5">조회된 데이터가 없습니다.</td>
-                        </tr>
-                    </tbody>
+        
+        <div class="hrm_main">
+
+            <header class="hrm_am">
+                <h2>근태 관리</h2>
+                <hr width="800px">
+            </header>
+            <div class="container hrm_am">
+                <div class="right-panel hrm_am">
+                    <div class="date-time hrm_am">
+                        <p id="current-time"></p>
+                        <p id="current-date"></p>
+                    </div>
+                    <ul class="menu-list hrm_am">
+                        <li><a href="#">전체 조회</a><span class="menu-count hrm_am">(5)</span></li>
+                        <li><a href="#">정상 근로일</a><span class="menu-count hrm_am">(3)</span></li>
+                        <li><a href="#">미처리</a><span class="menu-count hrm_am">(2)</span></li>
+                        <li><a href="#">실제 출퇴근 등록일</a><span class="menu-count hrm_am">(7)</span></li>
+                    </ul>
+                </div>
+                <h2>근무 일정</h2>
+                <hr width="800px">
+                <table class="hrm_am">
+                    <tr class="hrm_am">
+                        <th class="hrm_am">날짜</th>
+                        <th class="hrm_am">출근 시간</th>
+                        <th class="hrm_am">퇴근 시간</th>
+                        <th class="hrm_am">작업 시간</th>
+                        <th class="hrm_am">조치</th>
+                    </tr>
+                    <!-- 근무 일정 데이터를 여기에 추가 -->
                 </table>
+                <button class="btn hrm_am">근태 기록 입력</button>
             </div>
-        </section>
-        <hr>
-        <!-- section -->
-        <h2 class="py-1"> ● 금일/명일작업</h2>
-        <section id="recent" class="container">
-            <div class="card-list">
-                <!-- 금일작업 -->
-                <div class="card">
-                    <div class="img-box">
-                        <a href="#">
-                            <img src="img/img.jpg" alt="1">
-                        </a>
-                    </div>
+            <script src="hrm_am.js"></script>
+        </div>
 
-                    <div class="content-box">
-                        <h3 class="title">금일작업</h3>
-                        <p class="info">
-                            금일 작업사항 내용
-                        </p>
-                        <div class="etc-box">
-                            <div class="item">
-                                <span class="date">2023-06-06</span>
-                            </div>
-                            <button class="btn btn-dark rounded-pill px-3" type="button">확인하기</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 명일작업 -->
-                <div class="card">
-                    <div class="img-box">
-                        <a href="#">
-                            <img src="img/img.jpg" alt="1">
-                        </a>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="title">명일작업</h3>
-                        <p class="info">
-                            명일 작업사항 내용
-                        </p>
-                        <div class="etc-box">
-                            <div class="item">
-                                <span class="date">2023-06-06</span>
-                            </div>
-                            <button class="btn btn-dark rounded-pill px-3" type="button">확인하기</button>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-
-        </section>
+    </section>
 
 
     </main>

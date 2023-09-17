@@ -28,10 +28,7 @@
                     <span class="fs-4">Logo</span>
                 </a>
 
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-                </form>
-        
+                       
                 <div class="text-end">
                 <a href="#" class="btn btn-outline-light me-2">로그인</a>
                 <a href="#" class="btn btn-secondary me-2">회원가입</a>
@@ -112,93 +109,41 @@
     </section>
 
     <section class="content">
-        <!-- 공지사항 -->
-        <section class="announcement">
-            <h2 class="py-3"> ● 공지사항</h2>
-            <div class="ann">
-                <table class="table table-dark table-striped table-hover shadow text-center" id="board-list">
-                    <thead>
-                        <tr class="" id="board-title">
-                            <th>번호</th>
-                            <th>제목</th>
-                            <th>작성자</th>
-                            <th>등록일자</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="empty">
-                            <td colspan="5">1.</td>
-                        </tr>
-                        <tr id="empty">
-                            <td colspan="5">2.</td>
-                        </tr>
-                        <tr id="empty">
-                            <td colspan="5">3.</td>
-                        </tr>
-                        <tr id="empty">
-                            <td colspan="5">4.</td>
-                        </tr>
-                        <tr id="empty">
-                            <td colspan="5">조회된 데이터가 없습니다.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <hr>
-        <!-- section -->
-        <h2 class="py-1"> ● 금일/명일작업</h2>
-        <section id="recent" class="container">
-            <div class="card-list">
-                <!-- 금일작업 -->
-                <div class="card">
-                    <div class="img-box">
-                        <a href="#">
-                            <img src="img/img.jpg" alt="1">
-                        </a>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="title">금일작업</h3>
-                        <p class="info">
-                            금일 작업사항 내용
-                        </p>
-                        <div class="etc-box">
-                            <div class="item">
-                                <span class="date">2023-06-06</span>
-                            </div>
-                            <button class="btn btn-dark rounded-pill px-3" type="button">확인하기</button>
-                        </div>
-                    </div>
+        <div class="hrm_write">
+            <h2>인사 카드 생성</h2>
+            <hr width="700px">
+            <form class="hrm_write_detail" action="process_registration.php" method="post" enctype="multipart/form-data">
+                <label for="name">이 름:</label>
+                <input type="text" id="name" name="name" required><br><br>
+        
+                <label for="employee_number">사 번:</label>
+                <input type="text" id="employee_number" name="employee_number" required><br><br>
+        
+                <label for="department">부 서:</label>
+                <input type="text" id="department" name="department" required><br><br>
+        
+                <label for="position">직 급:</label>
+                <input type="text" id="position" name="position" required><br><br>
+        
+                <label for="phone_number">전 화 번 호:</label>
+                <input type="tel" id="phone_number" name="phone_number" required><br><br>
+        
+                <label for="address">주 소:</label>
+                <textarea id="address" name="address" required></textarea><br><br>
+        
+                <!-- <label for="photo">사 진 등 록:</label>
+                <input type="file" id="photo" name="photo" accept="image/*"><br><br> -->
+        
+                <div class="text-end">
+                <input type="submit" class="btn btn-lg btn-primary" value="등록">
+                <a href="/HRM/hrm_main.html" class="btn btn-lg btn-primary">돌아가기</a>
                 </div>
+            </form>
 
-                <!-- 명일작업 -->
-                <div class="card">
-                    <div class="img-box">
-                        <a href="#">
-                            <img src="img/img.jpg" alt="1">
-                        </a>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="title">명일작업</h3>
-                        <p class="info">
-                            명일 작업사항 내용
-                        </p>
-                        <div class="etc-box">
-                            <div class="item">
-                                <span class="date">2023-06-06</span>
-                            </div>
-                            <button class="btn btn-dark rounded-pill px-3" type="button">확인하기</button>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
+        </div>
 
 
-        </section>
+    </section>
 
 
     </main>

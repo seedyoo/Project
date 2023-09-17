@@ -3,35 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>자재관리 페이지</title>
     <!-- bootstrap - css  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- bootstrap - js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <!-- bootstrap_icon - css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
+   <!-- style.css 연결 -->
     <link rel="stylesheet" href="css/style.css">
-
+   
 </head>
 <body>
 
+    
+    
     <!-- topmenubar -->
     <header class="topmenubar p-3">
         <div class="container">
 
-            <div class="menucontent d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <div class="menucontent">
             
-                <a href="/index.html" class="logo d-flex align-items-center mb-43mb-md-0 me-md-auto text-white text-decoration-none">
+                <a href="/index.html" class="logo">
                     <svg class="bi pe-none me-2" width="0" height="32"><use xlink:href="index.html"/></svg>
-                    <img src="/img/img.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <img src="img/img.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
                     <span class="fs-4">Logo</span>
                 </a>
 
-                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-                </form>
-        
+                       
                 <div class="text-end">
                 <a href="#" class="btn btn-outline-light me-2">로그인</a>
                 <a href="#" class="btn btn-secondary me-2">회원가입</a>
@@ -45,7 +44,7 @@
     <main class="sidebar d-flex flex-nowrap">
     <section class="sidebar">
         <!-- 사이드바 -->
-        <div class="sidebarbox d-flex flex-column flex-shrink-0 p-3">
+        <div class="sidebarbox">
             <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
             <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="index.html"/></svg>
             <span class="fs-4">Menu</span>
@@ -111,95 +110,91 @@
         </div>
     </section>
 
-    <section class="content">
-        <!-- 공지사항 -->
+        <!-- 자재입고 페이지 -->
         <section class="announcement">
-            <h2 class="py-3"> ● 공지사항</h2>
-            <div class="ann">
-                <table class="table table-dark table-striped table-hover shadow text-center" id="board-list">
+            <h2 class="py-3"> 
+              ㅤ<img src="img/symbol1.svg" alt="" width="36" height="36">공급업체관리</h2>
+            <div class="material">
+                <table class="material_table" id="">
                     <thead>
                         <tr class="" id="board-title">
-                            <th>번호</th>
-                            <th>제목</th>
-                            <th>작성자</th>
-                            <th>등록일자</th>
+                            <th>공급업체번호</th>
+                            <th>공급업체이름</th>
+                            <th>공급업체 자제종류</th>
+                            <th>비고</th>
                         </tr>
                     </thead>
-                    <tbody>
+
+                    <tbody>   
                         <tr id="empty">
-                            <td colspan="5">1.</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
                         </tr>
                         <tr id="empty">
-                            <td colspan="5">2.</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
                         </tr>
                         <tr id="empty">
-                            <td colspan="5">3.</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
                         </tr>
                         <tr id="empty">
-                            <td colspan="5">4.</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
                         </tr>
                         <tr id="empty">
-                            <td colspan="5">조회된 데이터가 없습니다.</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
                         </tr>
+                        <tr id="empty">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr id="empty">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr id="empty">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr id="empty">
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="7">조회된 추가 데이터가 없습니다.</td>
+                        </tr>   
                     </tbody>
+                    
                 </table>
-            </div>
-        </section>
-        <hr>
-        <!-- section -->
-        <h2 class="py-1"> ● 금일/명일작업</h2>
-        <section id="recent" class="container">
-            <div class="card-list">
-                <!-- 금일작업 -->
-                <div class="card">
-                    <div class="img-box">
-                        <a href="#">
-                            <img src="img/img.jpg" alt="1">
-                        </a>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="title">금일작업</h3>
-                        <p class="info">
-                            금일 작업사항 내용
-                        </p>
-                        <div class="etc-box">
-                            <div class="item">
-                                <span class="date">2023-06-06</span>
-                            </div>
-                            <button class="btn btn-dark rounded-pill px-3" type="button">확인하기</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 명일작업 -->
-                <div class="card">
-                    <div class="img-box">
-                        <a href="#">
-                            <img src="img/img.jpg" alt="1">
-                        </a>
-                    </div>
-
-                    <div class="content-box">
-                        <h3 class="title">명일작업</h3>
-                        <p class="info">
-                            명일 작업사항 내용
-                        </p>
-                        <div class="etc-box">
-                            <div class="item">
-                                <span class="date">2023-06-06</span>
-                            </div>
-                            <button class="btn btn-dark rounded-pill px-3" type="button">확인하기</button>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-
-        </section>
-
+                <!-- float:right 적용으로 오른쪽부터 왼족으로 나열됨 -->
+                <a href="/materials/supplycompany/supplycompany.html">
+                    <button class="mt_button" type="button">삭제</button>
+                </a>
+                <a href="#">
+                    <button class="mt_button" type="button">등록</button>
+                </a>
+            </div> 
 
     </main>
 
