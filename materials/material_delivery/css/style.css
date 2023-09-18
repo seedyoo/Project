@@ -199,3 +199,32 @@ footer .copy {
     flex-shrink: 0; 
     padding: 15px; 
 }    
+.production_check {
+    position: relative;
+    margin: 50px;
+    height: 40px;
+    width: 300px;  
+}
+.production_searchbox {
+    width: 800px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.production_searchbox input {
+    width: 300px;
+}
+.production_searchbox label,
+.production_searchbox select,
+.production_searchbox input[type="text"] {
+    margin: 5px;
+}
+
+.productioninsert {
+    width: 960px;
+    margin: 0 auto;
+}
+.productionbox {
+    width: 500px;
+}
