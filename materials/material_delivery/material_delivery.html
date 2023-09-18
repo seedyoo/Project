@@ -112,8 +112,20 @@
 
         <!-- 자재입고 페이지 -->
         <section class="announcement">
-            <h2 class="py-3"> 
-              ㅤ<img src="img/symbol1.svg" alt="" width="36" height="36">출고 자재관리</h2>
+            <div class="production_check">
+                
+                <h2>출고자재정보 조회</h2>
+
+                <hr width="800px">
+                
+                <form class="production_searchbox">
+                    <label for="employee_number">출고자재 이름:</label>
+                    <input type="text" id="employee_number" name="employee_number" required>
+            
+                    <button class="btn btn-primary px-3" type="button">조회</button>
+                </form>
+            </div>
+
             <div class="material">
                 <table class="material_table" id="">
                     <thead>
