@@ -1,4 +1,4 @@
-/* ±Û¾¾Ã¼ */
+/* ï¿½Û¾ï¿½Ã¼ */
 @font-face {
     font-family: 'MB1';
     src: url('MClassic_TTF.ttf') format('truetype'); 
@@ -12,13 +12,13 @@
     font-style: normal;
   }
 h2.py-1 {
-    font-family: '±¼¸²Ã¼', sans-serif; 
+    font-family: 'ï¿½ï¿½ï¿½ï¿½Ã¼', sans-serif; 
     font-weight: bold; 
     font-size: 40px; 
     
 }
 h2.py-3 {
-    font-family: '±¼¸²Ã¼', sans-serif; 
+    font-family: 'ï¿½ï¿½ï¿½ï¿½Ã¼', sans-serif; 
     font-weight: bold; 
     font-size: 40px; 
     
@@ -128,7 +128,7 @@ footer .copy {
 #recent .card-list .card .content-box .etc-box .item a {}
 
 
-/* ÁÖ¹® °ü¸® ÆäÀÌÁö ½ÃÀÛ */
+/* ï¿½Ö¹ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
 .om_body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -210,4 +210,11 @@ footer .copy {
     background-color: #2c5e80; 
     color: #fff; 
 }
-/* ÁÖ¹® °ü¸® ÆäÀÌÁö ¸¶Áö¸· */
+.productioninsert {
+    width: 960px;
+    margin: 0 auto;
+}
+.productionbox {
+    width: 700px;
+    height: auto;
+}
