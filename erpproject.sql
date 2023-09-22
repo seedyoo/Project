@@ -298,7 +298,9 @@ VALUES (
       '2', '32131', '32@naver.com', '010-1234-5667', 
       null,'대리', sysdate, null);
 
-
+-- 덤프파일 import (CMD)
+cd 덤프파일 경로
+imp note/123456 file=expall.dmp log=expall.log ignore=y grants=y rows=y indexes=y full=y
 
 /*  
 테이블 삭제
